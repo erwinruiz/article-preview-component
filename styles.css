@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+:root {
+  --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --desaturatedDarkBlue: hsl(214, 17%, 51%);
+  --grayishBlue: hsl(212, 23%, 69%);
+  --lightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--lightGrayishBlue);
+}
+section {
+  width: 318px;
+  height: 67vh;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+section .hero {
+  height: 39%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 35px 30px 10px 30px;
+}
+section h1 {
+  color: var(--veryDarkGrayishBlue);
+  font-size: 16px;
+}
+section .content .description {
+  color: var(--desaturatedDarkBlue);
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+section .content .details {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+section .content .details .author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+section .content .details .author img {
+  border-radius: 50%;
+  height: 45px;
+}
+section .content .details .author .name-date h3 {
+  color: var(--veryDarkGrayishBlue);
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+section .content .details .author .name-date p {
+  color: var(--desaturatedDarkBlue);
+}
+section .content .details .share-icon {
+  background-color: var(--lightGrayishBlue);
+  border-radius: 50%;
+  height: 33px;
+  width: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
