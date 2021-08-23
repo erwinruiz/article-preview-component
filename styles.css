@@ -23,7 +23,7 @@ body {
 }
 section {
   width: 318px;
-  height: 530px;
+  height: 525px;
   background-color: white;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -69,7 +69,7 @@ section .details .author {
 }
 section .details .author img {
   border-radius: 50%;
-  height: 43px;
+  height: 41px;
 }
 section .details .author .name-date h3 {
   color: var(--veryDarkGrayishBlue);
@@ -82,8 +82,8 @@ section .details .author .name-date p {
 section .details .share-icon {
   background-color: var(--lightGrayishBlue);
   border-radius: 50%;
-  height: 33px;
-  width: 33px;
+  height: 32px;
+  width: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,20 +92,43 @@ section .details .share-icon:hover {
   cursor: pointer;
   background-color: var(--grayishBlue);
 }
-section .active {
+section .modal {
   background-color: var(--veryDarkGrayishBlue);
+  width: 258px;
+  height: 67px;
+  position: absolute;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-}
-section .active .author {
+  padding: 0 30px;
+  align-items: center;
+  justify-content: space-between;
   display: none;
 }
-section .active .media-icons {
-  display: initial;
+section .modal .media-icons {
   display: flex;
   gap: 15px;
 }
-section .active .media-icons h3 {
+section .modal .modal-share-icon {
+  background-color: var(--desaturatedDarkBlue);
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .modal .modal-share-icon:hover {
+  cursor: pointer;
+  background-color: var(--grayishBlue);
+}
+section .modal .modal-share-icon img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(238deg)
+    brightness(154%) contrast(104%);
+}
+section .active {
+  display: flex;
+}
+section .modal h3 {
   display: initial;
   color: var(--grayishBlue);
   font-weight: 500;
@@ -113,7 +136,7 @@ section .active .media-icons h3 {
   text-transform: uppercase;
   letter-spacing: 5px;
 }
-section .active .media-icons img:hover {
+section .modal img:hover {
   cursor: pointer;
 }
 
