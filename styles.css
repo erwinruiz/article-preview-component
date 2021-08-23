@@ -23,13 +23,13 @@ body {
 }
 section {
   width: 318px;
-  height: 544px;
+  height: 530px;
   background-color: white;
   border-radius: 8px;
   margin-bottom: 10px;
 }
 section .hero {
-  height: 39%;
+  height: 40%;
   width: 100%;
   object-fit: cover;
   object-position: top;
@@ -40,7 +40,7 @@ section .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   padding: 35px 30px 10px 30px;
 }
 section h1 {
@@ -50,32 +50,36 @@ section h1 {
 section .content .description {
   color: var(--desaturatedDarkBlue);
   line-height: 1.7;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
-section .content .details {
+section .details {
   display: flex;
-  width: 100%;
+  height: 67px;
+  padding: 0 30px;
   align-items: center;
   justify-content: space-between;
 }
-section .content .details .author {
+section .details .media-icons {
+  display: none;
+}
+section .details .author {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-section .content .details .author img {
+section .details .author img {
   border-radius: 50%;
-  height: 45px;
+  height: 43px;
 }
-section .content .details .author .name-date h3 {
+section .details .author .name-date h3 {
   color: var(--veryDarkGrayishBlue);
   font-size: 13px;
   margin-bottom: 3px;
 }
-section .content .details .author .name-date p {
+section .details .author .name-date p {
   color: var(--desaturatedDarkBlue);
 }
-section .content .details .share-icon {
+section .details .share-icon {
   background-color: var(--lightGrayishBlue);
   border-radius: 50%;
   height: 33px;
@@ -83,6 +87,34 @@ section .content .details .share-icon {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+section .details .share-icon:hover {
+  cursor: pointer;
+  background-color: var(--grayishBlue);
+}
+section .active {
+  background-color: var(--veryDarkGrayishBlue);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+section .active .author {
+  display: none;
+}
+section .active .media-icons {
+  display: initial;
+  display: flex;
+  gap: 15px;
+}
+section .active .media-icons h3 {
+  display: initial;
+  color: var(--grayishBlue);
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+section .active .media-icons img:hover {
+  cursor: pointer;
 }
 
 @media (min-width: 810px) {
