@@ -84,3 +84,26 @@ section .content .details .share-icon {
   align-items: center;
   justify-content: center;
 }
+
+@media (min-width: 810px) {
+  section {
+    width: 740px;
+    height: 280px;
+    display: flex;
+  }
+  section .hero {
+    height: 100%;
+    width: 38.5%;
+    object-position: left;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 0;
+  }
+  section .content {
+    gap: 10px;
+    padding: 30px 47px 10px 40px;
+  }
+  section h1 {
+    font-size: 20px;
+  }
+}
