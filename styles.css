@@ -23,7 +23,7 @@ body {
 }
 section {
   width: 318px;
-  height: 525px;
+  height: 532px;
   background-color: white;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -54,7 +54,7 @@ section .content .description {
 }
 section .details {
   display: flex;
-  height: 67px;
+  height: 69px;
   padding: 0 30px;
   align-items: center;
   justify-content: space-between;
@@ -95,7 +95,7 @@ section .details .share-icon:hover {
 section .modal {
   background-color: var(--veryDarkGrayishBlue);
   width: 258px;
-  height: 67px;
+  height: 69px;
   position: absolute;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -107,6 +107,7 @@ section .modal {
 section .modal .media-icons {
   display: flex;
   gap: 15px;
+  align-items: center;
 }
 section .modal .modal-share-icon {
   background-color: var(--desaturatedDarkBlue);
@@ -156,9 +157,40 @@ section .modal img:hover {
   }
   section .content {
     gap: 10px;
-    padding: 30px 47px 10px 40px;
+    padding: 30px 40px 10px 40px;
+  }
+  section .details {
+    padding: 0 40px;
   }
   section h1 {
     font-size: 20px;
+  }
+  section .modal {
+    width: 150px;
+    height: 40px;
+    justify-content: center;
+    border-radius: 8px;
+    margin-left: 294px;
+    margin-top: -40px;
+    z-index: 1;
+  }
+  section .modal .modal-share-icon {
+    display: none;
+  }
+  section .modal h3 {
+    font-size: 10px;
+  }
+  section .modal-arrow {
+    height: 20px;
+    width: 20px;
+    background-color: var(--veryDarkGrayishBlue);
+    position: absolute;
+    margin-left: 390px;
+    margin-top: -15px;
+    transform: rotate(45deg);
+    display: none;
+  }
+  section .active-arrow {
+    display: initial;
   }
 }
