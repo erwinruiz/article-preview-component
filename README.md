@@ -39,6 +39,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- JavaScript
 
 The designs were created to the following widths:
 

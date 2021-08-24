@@ -147,13 +147,13 @@ section .modal img:hover {
 
 @media (min-width: 810px) {
   section {
-    width: 740px;
+    width: 720px;
     height: 280px;
     display: flex;
   }
   section .hero {
     height: 100%;
-    width: 38.5%;
+    width: 40%;
     object-position: left;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -164,7 +164,7 @@ section .modal img:hover {
     padding: 30px 40px 10px 40px;
   }
   section .details {
-    padding: 0 40px;
+    padding-left: 40px;
   }
   section h1 {
     font-size: 20px;
@@ -174,7 +174,7 @@ section .modal img:hover {
     height: 40px;
     justify-content: center;
     border-radius: 8px;
-    margin-left: 294px;
+    margin-left: 279px;
     margin-top: -40px;
     z-index: 1;
   }
@@ -189,7 +189,7 @@ section .modal img:hover {
     width: 20px;
     background-color: var(--veryDarkGrayishBlue);
     position: absolute;
-    margin-left: 390px;
+    margin-left: 375px;
     margin-top: -15px;
     transform: rotate(45deg);
     display: none;
